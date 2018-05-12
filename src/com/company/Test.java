@@ -2,13 +2,18 @@ package com.company;
 
 public class Test {
     int a, b;
-
-     Test(int i, int j) {
+    Test(int i, int j) {
         a = i;
         b = j;
     }
-    boolean equals(Test o){
-         if (o.a==a&&o.b==b) return true;
-         else return false;
+
+    void meth(Test o) {
+        o.a *= 2;
+        o.b /= 2;
+    }
+
+    void meth(int a, int b) {
+        a *= 2;
+        b /= 2;
     }
 }
